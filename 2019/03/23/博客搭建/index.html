@@ -112,7 +112,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/03/23/5c95a38b21ee8.png">
 <meta property="og:image" content="https://i.loli.net/2019/03/23/5c95a38bae250.png">
 <meta property="og:image" content="https://i.loli.net/2019/03/23/5c95a38fcb721.png">
-<meta property="og:updated_time" content="2019-03-23T03:14:58.000Z">
+<meta property="og:updated_time" content="2019-03-23T06:20:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建">
 <meta name="twitter:description" content="本文采用github+hexo来搭建博客。 准备工作： 一个github账号 下载git 下载node.js  基础配置本地：本步骤所需时间较长，请耐心等待。 在本地创建一个新的文件夹（必须为新的/空的），名字自行定义。 打开文件夹后鼠标右键打开Git Bash。 输入npm install -g hexo下载Hexo 输入hexo init安装Hexo（此时文件夹下会陆续出现文件/文件夹） 输入">
@@ -425,7 +425,7 @@
                 
               
 
-              <time title="创建时间：2019-03-23 09:08:00 / 修改时间：11:14:58" itemprop="dateCreated datePublished" datetime="2019-03-23T09:08:00+08:00">2019-03-23</time>
+              <time title="创建时间：2019-03-23 09:08:00 / 修改时间：14:20:30" itemprop="dateCreated datePublished" datetime="2019-03-23T09:08:00+08:00">2019-03-23</time>
             
 
             
@@ -457,7 +457,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">5.8k</span>
+                <span title="本文字数">5.7k</span>
               
 
               
@@ -526,7 +526,7 @@
 <p>以下所有步骤均建议配置完成后输入<code>hexo s</code>启动本地浏览，进入<code>localhost:4000</code>验证。</p>
 <h3 id="主题安装："><a href="#主题安装：" class="headerlink" title="主题安装："></a>主题安装：</h3><p>下载<a href="https://github.com/theme-next/hexo-theme-next/archive/v6.7.0.zip" target="_blank" rel="noopener">NexT主题（V6.7.0）</a></p>
 <p>把压缩包直接解压到博客根目录下的theme文件夹内：</p>
-<p>打开博客根目录下的<code>_config.yml</code>，找到这行并修改成如下：</p>
+<p>打开基础配置文件，找到这行并修改成如下：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">hexo-theme-next-6.7.0</span></span><br></pre></td></tr></table></figure>
 <h3 id="首页标题-名字-语言设置"><a href="#首页标题-名字-语言设置" class="headerlink" title="首页标题/名字/语言设置"></a>首页标题/名字/语言设置</h3><p>打开基础配置文件。</p>
 <p>其它语言参照<code>/theme/languages/</code>下的语言配置文件<del>（可魔改）</del></p>
@@ -590,7 +590,7 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line"><span class="bullet">- </span>标签1</span><br><span class="line"><span class="bullet">- </span>标签2</span><br><span class="line"><span class="bullet">- </span>标签3</span><br></pre></td></tr></table></figure>
 <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>打开themes目录下<code>\source\css\_custom\custom.styl</code></p>
 <p>添加如下代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image:url(/images/background2.jpg);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br><span class="line">.main-inner &#123;</span><br><span class="line">    opacity: 0.9;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-image:url(/images/background.png);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">&#125;</span><br><span class="line">.main-inner &#123;</span><br><span class="line">    opacity: 0.9;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>background-image:url</code>:背景链接，目录默认为主题目录下的<code>\soure\images\</code></p>
 <p><code>background-repeat: no-repeat</code>:背景图不重复出现</p>
 <p><code>background-size: cover</code>:平铺</p>
